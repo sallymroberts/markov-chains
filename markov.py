@@ -64,17 +64,8 @@ def make_text(chains):
 # be used by examining the `sys.argv` arguments (if neccessary, see the
 # Python docs for sys.argv)
 
-# input_text = "Some text"
+file_name = sys.argv[1]
+chains = make_chains(file_convert(file_name))
 
-# Get a Markov chain
-# chain_dict = make_chains(input_text)
-
-# Produce random text
-# random_text = make_text(chain_dict)
-
-#print random_text
-
-# For test purposes, executed functions using hard-coded file as input
-# Will replace these lines with more generic version per above comments
-chains = make_chains(file_convert('green-eggs.txt'))
-print make_text(chains)
+random_text = make_text(chains)
+print random_text
