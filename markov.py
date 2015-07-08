@@ -60,9 +60,7 @@ def make_text(chains):
     return random_text
 
 
-# Change this to read input_text from a file, deciding which file should
-# be used by examining the `sys.argv` arguments (if neccessary, see the
-# Python docs for sys.argv)
+# Read input_text from a file, using `sys.argv` arguments 
 
 file_name = sys.argv[1]
 chains = make_chains(file_convert(file_name))
